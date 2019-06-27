@@ -1,0 +1,18 @@
+<html>
+<script>
+var a = 'hackerrank';
+var b = 'hereiamstackerrank';
+var current_position = 0;
+var max_position = a.length;
+for(var i=0;i<b.length;i++) {
+	if(b.substr(i,1) == a.substr(current_position,1)){
+		current_position++;
+	}
+} 
+if(current_position == max_position) {
+	console.log(true)
+} else {
+	console.log(false);
+}
+</script>
+</html>
